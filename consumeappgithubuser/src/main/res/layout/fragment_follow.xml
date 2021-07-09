@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FollowFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/item_user"
+        android:id="@+id/rv_follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/follows_progresbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/teal_200"/>
+
+    <TextView
+        android:id="@+id/tv_follow_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text = "@string/no_user"
+        android:visibility="gone"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
